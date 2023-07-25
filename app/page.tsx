@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import NftCollections from "./components/NftCollections";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <main
       style={{
         margin: "200px",
-        height: "100vh",
+        height: "100%",
       }}
     >
       <div>
@@ -136,6 +137,7 @@ export default function Home() {
           </div>
         </div>
         <NftCollections />
+        <Footer />
       </div>
     </main>
   );

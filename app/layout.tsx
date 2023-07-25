@@ -17,16 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div
-          style={{
-            background:
-              "linear-gradient(10deg, rgba(255,255,255,1) 5%, rgba(255,224,219,1) 200%)",
-          }}
-        >
-          <Header />
-          {children}
-        </div>
+      <body
+        className={inter.className}
+        style={{
+          background:
+            "linear-gradient(100deg, rgba(255,255,255,1) 5%, rgba(255,224,219,1) 200%)",
+        }}
+      >
+        <Header />
+        {children}
       </body>
     </html>
   );

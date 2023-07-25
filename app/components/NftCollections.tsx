@@ -76,7 +76,6 @@ const NftCollections = () => {
                   <div
                     key={cellIndex}
                     style={{
-                      backgroundColor: "white",
                       padding: "8px",
                       fontWeight: "normal",
                       borderBottom: isLastRow ? "none" : "1px solid black",
