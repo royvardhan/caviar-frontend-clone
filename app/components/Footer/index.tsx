@@ -13,7 +13,7 @@ const Footer = () => {
           backgroundColor: "white",
           border: "none",
           borderRadius: "20px",
-          height: "220px",
+          height: "250px",
           marginBottom: "100px",
         }}
       >
@@ -61,7 +61,7 @@ const Footer = () => {
           justifyContent: "center",
           alignItems: "center",
           margin: "0 300px",
-          padding: "80px",
+          padding: "30px",
           backgroundColor: "white",
           border: "none",
           borderRadius: "20px",
