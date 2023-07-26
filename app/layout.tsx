@@ -2,13 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./components/Header";
+import "@rainbow-me/rainbowkit/styles.css";
+import { Providers } from "./providors";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Smol caviar frontend",
-  description: "A smol frontend for caviar testing",
-};
 
 export default function RootLayout({
   children,
@@ -24,8 +21,10 @@ export default function RootLayout({
             "linear-gradient(100deg, rgba(255,255,255,1) 5%, rgba(255,224,219,1) 200%)",
         }}
       >
-        <Header />
-        {children}
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );

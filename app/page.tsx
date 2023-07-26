@@ -1,7 +1,14 @@
+"use client";
+
 import Footer from "./components/Footer";
 import NftCollections from "./components/NftCollections";
+import miladyImage from "../public/milady-eth.png";
+import securityImage from "../public/security.png";
+import { useAccount } from "wagmi";
 
 export default function Home() {
+  const { isConnected } = useAccount();
+  console.log(isConnected);
   return (
     <main
       style={{
@@ -56,11 +63,12 @@ export default function Home() {
             <div
               style={{
                 color: "black",
-                border: "1px solid black",
+                border: "none",
                 borderRadius: "20px",
                 width: "350px",
                 height: "150px",
                 display: "flex",
+                backgroundColor: "#FFFCFC",
               }}
             >
               <div
@@ -93,46 +101,57 @@ export default function Home() {
                     display: "flex",
                   }}
                 >
-                  <p>Side Logo</p>
+                  <div
+                    style={{
+                      backgroundImage: `url(${miladyImage.src})`,
+                      border: "none",
+                      backgroundRepeat: "no-repeat",
+                      backgroundPosition: "right",
+                      backgroundSize: "contain",
+                      position: "relative",
+                      height: "120px",
+                      width: "120px",
+                    }}
+                  ></div>
                 </div>
               </div>
             </div>
             <div
               style={{
                 color: "black",
-                border: "1px solid black",
+                border: "none",
                 borderRadius: "20px",
                 width: "350px",
                 height: "150px",
                 display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "0 10px",
+                backgroundColor: "#FFFCFC",
               }}
             >
               <div
                 style={{
-                  padding: "10px",
                   display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
+                  flexDirection: "column",
+                  marginRight: "50px",
                 }}
               >
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    marginRight: "50px",
-                  }}
-                >
-                  <p style={{ marginBottom: "10px" }}>Security Audits</p>
-                  <h1>2</h1>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                  }}
-                >
-                  <p>Side Logo</p>
-                </div>
+                <p style={{ marginBottom: "10px" }}>Security Audits</p>
+                <h1>2</h1>
               </div>
+              <div
+                style={{
+                  backgroundImage: `url(${securityImage.src})`,
+                  border: "none",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "right",
+                  backgroundSize: "contain",
+                  position: "relative",
+                  height: "180px",
+                  width: "300px",
+                }}
+              ></div>
             </div>
           </div>
         </div>

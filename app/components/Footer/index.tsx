@@ -1,5 +1,4 @@
 import bgImg from "../../../public/boat.webp";
-import imageperp from "../../../public/nftperp-logo.svg";
 import Image from "next/image";
 
 const Footer = () => {
@@ -62,11 +61,11 @@ const Footer = () => {
           justifyContent: "center",
           alignItems: "center",
           margin: "0 300px",
-          padding: "150px",
+          padding: "80px",
           backgroundColor: "white",
           border: "none",
           borderRadius: "20px",
-          height: "360px",
+          height: "350px",
           gap: "20px",
         }}
       >

@@ -1,3 +1,5 @@
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 const Header: React.FC = () => {
   return (
     <header
@@ -34,18 +36,8 @@ const Header: React.FC = () => {
           <p style={{ margin: "0 8px" }}>Twitter</p>
           <p style={{ margin: "0 8px" }}>Discord</p>
         </div>
-        <button
-          style={{
-            backgroundColor: "#333",
-            borderRadius: "12px",
-            color: "white",
-            padding: "5px 20px",
-            border: "white",
-            cursor: "pointer",
-          }}
-        >
-          Open App
-        </button>
+
+        <ConnectButton />
       </div>
     </header>
   );
