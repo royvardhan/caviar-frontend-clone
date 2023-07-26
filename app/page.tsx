@@ -32,7 +32,7 @@ export default function Home() {
           >
             <div
               style={{
-                fontSize: "65px",
+                fontSize: "55px",
               }}
             >
               Caviar is an AMM for NFTs. Trade, swap, and provide liquidity.
